@@ -69,7 +69,7 @@ export default function Features() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style >{`
         @keyframes float1 {
           0%, 100% { transform: translate(0px, 0px) rotate(12deg); }
           25% { transform: translate(30px, -25px) rotate(20deg); }
