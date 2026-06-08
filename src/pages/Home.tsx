@@ -1,19 +1,17 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import Features from "../components/Features";
-import About from "../components/About";
-import Services from "../components/Service";
-import Testimonials from "../components/Testimonials";
+import StatsPill from "../components/StatsPill";
+import ServiceCards from "../components/ServiceCards";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen bg-[#0A0A0A]">
       <Navbar />
       <Hero />
-      <Features />
-      <About />
-      <Services />
-      <Testimonials />
+      <StatsPill />
+      <ServiceCards />
+      <Footer />
     </div>
   );
 }
