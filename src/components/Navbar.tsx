@@ -11,12 +11,9 @@ export default function Navbar() {
         </p>
       </div>
 
-      <a
-        href="mailto:hello@nordicabrencare.com"
-        className="text-sm text-white/40 hover:text-white"
-      >
-        hello@nordicabrencare.com
-      </a>
+      
+     
+      
     </nav>
   );
 }
