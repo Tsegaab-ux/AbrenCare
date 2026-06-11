@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function ConsultationCard() {
   return (
     <Link
-      to="/consultation"
+      to="/consultation-ethiopia"
       className="group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-[#1565C0] to-[#0E4A8F] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1565C0]/20 block"
     >
       <div className="p-8">
