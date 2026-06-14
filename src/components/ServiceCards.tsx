@@ -1,6 +1,6 @@
 import FamilyCard from "./FamilyCard";
 import ExecutiveCard from "./ExecutiveCard";
-import ConsultationCard from "./Consultationcard";
+import ConsultationCard from "./ConsultationCard";
 
 export default function ServiceCards() {
   return (
