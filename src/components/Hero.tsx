@@ -1,52 +1,104 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-5 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?w=1920&q=80"
-        >
-          <source 
-            src="https://player.vimeo.com/external/434045467.sd.mp4?s=20c5748c3a0f2a73c89d4cb4f1a836a4b6d39bd0&profile_id=164" 
-            type="video/mp4" 
-          />
-          <img 
-            src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?w=1920&q=80" 
-            alt="Nurse checking elderly patient's vital signs at home"
-            className="w-full h-full object-cover object-center"
-          />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
-      </div>
-
+    <section className="bg-[#F7F4EF] min-h-screen px-6 md:px-12 py-8 text-[#1E1E1E]">
       
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-[#C8922A]/20 bg-[#C8922A]/10 px-4 py-2 text-xs text-[#C8922A]">
-          <div className="w-2 h-2 rounded-full bg-[#C8922A] animate-pulse" />
-          Now open — founding members across Ethiopia and abroad
+      {/* Main Container */}
+      <div className="max-w-7xl mx-auto">
+
+        {/* Hero Top */}
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+
+          {/* Left Side */}
+          <div>
+
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm mb-8">
+              <span className="w-2 h-2 bg-[#C89B4D] rounded-full"></span>
+              Now open — founding members across Ethiopia and abroad
+            </div>
+
+            {/* Heading */}
+            <h1 className="text-5xl md:text-7xl leading-tight font-serif mb-6">
+              Nordic standards.
+              <br />
+              <span className="italic text-[#C89B4D]">
+                Ethiopian heart.
+              </span>
+            </h1>
+
+            {/* Paragraph */}
+            <p className="text-lg text-gray-700 leading-8 mb-8 max-w-xl">
+              World-class healthcare for families and leaders.
+              Built on Nordic standards. Delivered with
+              Ethiopian heart.
+            </p>
+
+            {/* Features */}
+            <div className="grid grid-cols-2 gap-5 mb-10 text-sm">
+
+              <div className="flex gap-3">
+                <div className="text-[#C89B4D]">◉</div>
+                <div>
+                  <p className="font-medium">No hospital queue</p>
+                  <p className="text-gray-500">We come to you</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <div className="text-[#C89B4D]">◉</div>
+                <div>
+                  <p className="font-medium">Licensed</p>
+                  <p className="text-gray-500">Ethiopian doctors</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <div className="text-[#C89B4D]">◉</div>
+                <div>
+                  <p className="font-medium">Confidential</p>
+                  <p className="text-gray-500">Your health is private</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <div className="text-[#C89B4D]">◉</div>
+                <div>
+                  <p className="font-medium">Nordic-standard</p>
+                  <p className="text-gray-500">Global care, local heart</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Button */}
+            <button className="bg-[#C89B4D] text-white px-8 py-4 rounded-xl hover:opacity-90 transition">
+              Explore our services →
+            </button>
+          </div>
+
+          {/* Right Side */}
+          <div className="relative">
+
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600"
+              alt="Luxury Clinic"
+              className="rounded-3xl h-[650px] w-full object-cover"
+            />
+
+            {/* Floating Testimonial */}
+            <div className="absolute bottom-6 left-6 right-6 bg-white rounded-2xl p-6 shadow-xl">
+
+              <p className="text-gray-700 mb-3">
+                “It gives me peace of mind knowing
+                my mother is in good hands.”
+              </p>
+
+              <p className="text-sm text-gray-500">
+                — Yonas, Stockholm
+              </p>
+            </div>
+          </div>
         </div>
 
-        <h1 className="mt-8 text-6xl font-bold text-white">
-          Nordic standards.
-          <br />
-          <span className="italic text-[#C8922A]">
-            Ethiopian heart.
-          </span>
-        </h1>
-
-        
-        <p className="max-w-3xl mx-auto mt-6 text-lg text-white/60">
-          Nordic Abrencare brings world-class health standards to Ethiopia.
-        </p>
-
-        
-        <p className="max-w-3xl mx-auto mt-4 text-base text-white/50">
-          Professional home care services delivered with compassion and excellence.
-        </p>
       </div>
     </section>
   );

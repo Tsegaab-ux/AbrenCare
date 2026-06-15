@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-[#F7F3EE] overflow-x-hidden">
+    <div className="relative min-h-screen bg-[#F000] overflow-x-hidden">
       
-      {/* Animated Medical Background Elements */}
+      
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         
         

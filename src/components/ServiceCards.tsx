@@ -4,8 +4,8 @@ import ConsultationCard from "./ConsultationCard";
 
 export default function ServiceCards() {
   return (
-    <section className="max-w-7xl mx-auto px-5 py-20">
-      <div className="grid md:grid-cols-3 gap-6">
+    <section className="w-full px-12 lg:px-20 py-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <FamilyCard />
         <ExecutiveCard />
         <ConsultationCard />
