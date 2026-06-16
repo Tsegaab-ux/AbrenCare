@@ -1,4 +1,4 @@
-import ConsultationNavbar from "../components/ConsultationNavbar";
+import Navbar from "../components/Navbar";
 import ConsultationHero from "../components/ConsultationHero";
 import ProblemSection from "../components/ProblemSection";
 import HowItWorks from "../components/HowItWorks";
@@ -8,12 +8,12 @@ import DoctorsSection from "../components/DoctorsSection";
 import TestimonialsSection from "../components/TestimonialSection";
 import GuaranteeSection from "../components/GuaranteeSection";
 import ConsultationBookingForm from "../components/ConsultationBookingForm";
-import ConsultationFooter from "../components/ConsultationFooter";
+import Footer from "../components/Footer";
 
 export default function ConsultationEthiopia() {
   return (
     <div className="bg-[#0A0A0A] text-white overflow-x-hidden">
-      <ConsultationNavbar />
+      <Navbar />
       <ConsultationHero />
       <ProblemSection />
       <HowItWorks />
@@ -23,7 +23,7 @@ export default function ConsultationEthiopia() {
       <TestimonialsSection />
       <GuaranteeSection />
       <ConsultationBookingForm />
-      <ConsultationFooter />
+      <Footer />
     </div>
   );
 }

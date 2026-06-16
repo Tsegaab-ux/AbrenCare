@@ -4,7 +4,7 @@ export default function FamilyCard() {
   return (
     <Link
       to="/family"
-      className="block rounded-3xl bg-[#EEF1E8] p-8 transition-all duration-300 hover:-translate-y-1"
+      className="block rounded-3xl bg-[#EEF1E8] p-8 border border-[#D9DED1] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
     >
       {/* Icon */}
       <div className="w-14 h-14 rounded-2xl bg-[#A7B096] flex items-center justify-center text-white text-2xl">

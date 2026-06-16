@@ -4,7 +4,7 @@ export default function ConsultationCard() {
   return (
     <Link
       to="/consultation-ethiopia"
-      className="block rounded-3xl bg-[#EDF3FA] p-8 transition-all duration-300 hover:-translate-y-1"
+      className="block rounded-3xl bg-[#EDF3FA] p-8 border border-[#D7E2EE] shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
     >
       
       <div className="w-14 h-14 rounded-2xl bg-[#7188A6] flex items-center justify-center text-white text-2xl">

@@ -4,7 +4,7 @@ export default function ExecutiveCard() {
   return (
     <Link
       to="/executive-health"
-      className="block rounded-3xl bg-[#F8F2E7] p-8 transition-all duration-300 hover:-translate-y-1"
+      className="block rounded-3xl bg-[#F8F2E7] p-8 border border-[#E7DCCB] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
     >
       {/* Icon */}
       <div className="w-14 h-14 rounded-2xl bg-[#C89B4D] flex items-center justify-center text-white text-2xl">
