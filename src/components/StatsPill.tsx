@@ -1,8 +1,11 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function StatsPill() {
+  const { t } = useTranslation();
+
   const [ethiopiaCount, setEthiopiaCount] = useState(0);
   const [nordicCount, setNordicCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -68,7 +71,7 @@ export default function StatsPill() {
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-[#C89B4D]" />
             <span className="text-sm uppercase tracking-wide text-gray-500 font-medium">
-              Life expectancy gap
+              {t("stats.label")}
             </span>
           </div>
 
@@ -81,7 +84,7 @@ export default function StatsPill() {
                 {ethiopiaCount}
               </h3>
               <p className="text-xs text-gray-500 mt-1">
-                Ethiopia
+                {t("stats.ethiopia")}
               </p>
             </div>
 
@@ -96,7 +99,7 @@ export default function StatsPill() {
                 {nordicCount}
               </h3>
               <p className="text-xs text-gray-500 mt-1">
-                Nordic
+                {t("stats.nordic")}
               </p>
             </div>
           </div>
@@ -105,9 +108,10 @@ export default function StatsPill() {
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-[#C89B4D]" />
             <span className="text-sm font-semibold text-[#2B2B2B]">
-              We are closing this gap.
+              {t("stats.closing")}
             </span>
           </div>
+
         </div>
 
         {/* Bottom progress bar */}
@@ -121,6 +125,7 @@ export default function StatsPill() {
             }}
           />
         </div>
+
       </div>
     </div>
   );

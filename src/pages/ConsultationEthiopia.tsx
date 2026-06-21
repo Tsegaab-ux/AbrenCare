@@ -8,7 +8,9 @@ import DoctorsSection from "../components/DoctorsSection";
 import TestimonialsSection from "../components/TestimonialSection";
 import GuaranteeSection from "../components/GuaranteeSection";
 import ConsultationBookingForm from "../components/ConsultationBookingForm";
+import waitlistSection from "../components/WaitlistSection";
 import Footer from "../components/Footer";
+import WaitlistSection from "../components/WaitlistSection";
 
 export default function ConsultationEthiopia() {
   return (
@@ -22,7 +24,7 @@ export default function ConsultationEthiopia() {
       <DoctorsSection />
       <TestimonialsSection />
       <GuaranteeSection />
-      <ConsultationBookingForm />
+      <WaitlistSection />
       <Footer />
     </div>
   );

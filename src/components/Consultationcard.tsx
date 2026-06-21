@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function ConsultationCard() {
+  const { t } = useTranslation();
+
   return (
     <Link
       to="/consultation-ethiopia"
@@ -13,26 +16,22 @@ export default function ConsultationCard() {
 
       
       <p className="mt-6 text-xs uppercase tracking-wider text-gray-500 font-medium">
-        For Ethiopians in Ethiopia
+        {t("consultationCard.label")}
       </p>
 
       
       <h2 className="mt-3 text-3xl leading-tight font-serif text-[#222]">
-        Digital health consultation
+        {t("consultationCard.title")}
       </h2>
 
       
       <p className="mt-4 text-gray-600 leading-7">
-        A licensed Ethiopian doctor on your phone.
-        In Amharic. Within hours.
-        No travel.
-        No hospital stress.
-        Confirm your doctor in 15 minutes.
+        {t("consultationCard.description")}
       </p>
 
       
       <div className="mt-8 text-[#7188A6] font-medium">
-        Book a consultation →
+        {t("consultationCard.cta")}
       </div>
     </Link>
   );

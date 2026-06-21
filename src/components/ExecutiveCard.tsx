@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function ExecutiveCard() {
+  const { t } = useTranslation();
+
   return (
     <Link
       to="/executive-health"
@@ -13,25 +16,22 @@ export default function ExecutiveCard() {
 
       
       <p className="mt-6 text-xs uppercase tracking-wider text-gray-500 font-medium">
-        For Ethiopian leaders
+        {t("executiveCard.label")}
       </p>
 
       
       <h2 className="mt-3 text-3xl leading-tight font-serif text-[#222]">
-        Executive health programme
+        {t("executiveCard.title")}
       </h2>
 
       
       <p className="mt-4 text-gray-600 leading-7">
-        You built an empire. Your heart does not know that.
-        Hypertension has no symptoms.
-        Kidney disease has no symptoms.
-        We monitor everything continuously.
+        {t("executiveCard.description")}
       </p>
 
-      {/* CTA */}
+      
       <div className="mt-8 text-[#C89B4D] font-medium">
-        Explore executive health →
+        {t("executiveCard.cta")}
       </div>
     </Link>
   );

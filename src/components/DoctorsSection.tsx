@@ -1,50 +1,54 @@
-const doctors = [
-  {
-    initials: "HB",
-    name: "Dr. Haile Bekele",
-    specialty: "General practice",
-    experience: "12 years experience",
-    languages: ["Amharic", "English"],
-    tags: ["Amharic", "English", "Licensed"]
-  },
-  {
-    initials: "SA",
-    name: "Dr. Sara Alemu",
-    specialty: "Paediatrics",
-    experience: "9 years experience",
-    languages: ["Amharic", "English"],
-    tags: ["Amharic", "Children specialist", "Licensed"],
-    bgColor: "#7B1FA2"
-  },
-  {
-    initials: "MT",
-    name: "Dr. Mekdes Tadesse",
-    specialty: "Cardiology",
-    experience: "14 years experience",
-    languages: ["Amharic", "English"],
-    tags: ["Amharic", "Heart specialist", "Licensed"],
-    bgColor: "#00695C"
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Doctors() {
+  const { t } = useTranslation();
+  
+  const doctors = [
+    {
+      initials: "HB",
+      name: t('doctors.doctor1Name'),
+      specialty: t('doctors.doctor1Specialty'),
+      experience: t('doctors.doctor1Experience'),
+      languages: ["Amharic", "English"],
+      tags: [t('doctors.tagAmharic'), t('doctors.tagLicensed')]
+    },
+    {
+      initials: "SA",
+      name: t('doctors.doctor2Name'),
+      specialty: t('doctors.doctor2Specialty'),
+      experience: t('doctors.doctor2Experience'),
+      languages: ["Amharic", "English"],
+      tags: [t('doctors.tagAmharic'), t('doctors.tagChildrenSpecialist'), t('doctors.tagLicensed')],
+      bgColor: "#7B1FA2"
+    },
+    {
+      initials: "MT",
+      name: t('doctors.doctor3Name'),
+      specialty: t('doctors.doctor3Specialty'),
+      experience: t('doctors.doctor3Experience'),
+      languages: ["Amharic", "English"],
+      tags: [t('doctors.tagAmharic'), t('doctors.tagHeartSpecialist'), t('doctors.tagLicensed')],
+      bgColor: "#00695C"
+    }
+  ];
+
   return (
-    <section className="bg-[#1A1A1A] py-20 px-[5%]">
+    <section className="bg-[#1A1A1A] py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-12">
           <div className="inline-block bg-white/8 border border-white/8 text-white/50 text-[11px] font-semibold tracking-[0.07em] uppercase px-3 py-1 rounded-full mb-3.5">
-            Our doctors
+            {t('doctors.badge')}
           </div>
           
           <h2 className="font-['Playfair_Display',serif] text-3xl lg:text-[42px] font-bold leading-[1.15] tracking-[-1px] text-white mb-3.5">
-            Licensed. Experienced.
+            {t('doctors.titleLine1')}
             <br />
-            Speaking your language.
+            {t('doctors.titleLine2')}
           </h2>
           
           <p className="text-base text-white/40 max-w-[560px] mx-auto leading-relaxed">
-            Every doctor on Nordic Abrencare is licensed by the Ethiopian Medical Board. No exceptions. No shortcuts.
+            {t('doctors.description')}
           </p>
         </div>
         

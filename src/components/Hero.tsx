@@ -1,7 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-[#F7F4EF] min-h-screen px-6 md:px-12 py-8 text-[#1E1E1E]">
-      
+
       {/* Main Container */}
       <div className="max-w-7xl mx-auto">
 
@@ -14,23 +18,21 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm mb-8">
               <span className="w-2 h-2 bg-[#C89B4D] rounded-full"></span>
-              Now open — founding members across Ethiopia and abroad
+              {t("hero.badge")}
             </div>
 
             {/* Heading */}
             <h1 className="text-5xl md:text-7xl leading-tight font-serif mb-6">
-              Nordic standards.
+              {t("hero.title")}
               <br />
               <span className="italic text-[#C89B4D]">
-                Ethiopian heart.
+                {t("hero.titleAccent")}
               </span>
             </h1>
 
             {/* Paragraph */}
             <p className="text-lg text-gray-700 leading-8 mb-8 max-w-xl">
-              World-class healthcare for families and leaders.
-              Built on Nordic standards. Delivered with
-              Ethiopian heart.
+              {t("hero.description")}
             </p>
 
             {/* Features */}
@@ -39,40 +41,42 @@ export default function Hero() {
               <div className="flex gap-3">
                 <div className="text-[#C89B4D]">◉</div>
                 <div>
-                  <p className="font-medium">No hospital queue</p>
-                  <p className="text-gray-500">We come to you</p>
+                  <p className="font-medium">{t("hero.feature1Title")}</p>
+                  <p className="text-gray-500">{t("hero.feature1Desc")}</p>
                 </div>
               </div>
 
               <div className="flex gap-3">
                 <div className="text-[#C89B4D]">◉</div>
                 <div>
-                  <p className="font-medium">Licensed</p>
-                  <p className="text-gray-500">Ethiopian doctors</p>
+                  <p className="font-medium">{t("hero.feature2Title")}</p>
+                  <p className="text-gray-500">{t("hero.feature2Desc")}</p>
                 </div>
               </div>
 
               <div className="flex gap-3">
                 <div className="text-[#C89B4D]">◉</div>
                 <div>
-                  <p className="font-medium">Confidential</p>
-                  <p className="text-gray-500">Your health is private</p>
+                  <p className="font-medium">{t("hero.feature3Title")}</p>
+                  <p className="text-gray-500">{t("hero.feature3Desc")}</p>
                 </div>
               </div>
 
               <div className="flex gap-3">
                 <div className="text-[#C89B4D]">◉</div>
                 <div>
-                  <p className="font-medium">Nordic-standard</p>
-                  <p className="text-gray-500">Global care, local heart</p>
+                  <p className="font-medium">{t("hero.feature4Title")}</p>
+                  <p className="text-gray-500">{t("hero.feature4Desc")}</p>
                 </div>
               </div>
+
             </div>
 
             {/* Button */}
             <button className="bg-[#C89B4D] text-white px-8 py-4 rounded-xl hover:opacity-90 transition">
-              Explore our services →
+              {t("hero.button")}
             </button>
+
           </div>
 
           {/* Right Side */}
@@ -88,13 +92,13 @@ export default function Hero() {
             <div className="absolute bottom-6 left-6 right-6 bg-white rounded-2xl p-6 shadow-xl">
 
               <p className="text-gray-700 mb-3">
-                “It gives me peace of mind knowing
-                my mother is in good hands.”
+                {t("hero.testimonial")}
               </p>
 
               <p className="text-sm text-gray-500">
-                — Yonas, Stockholm
+                {t("hero.author")}
               </p>
+
             </div>
           </div>
         </div>
