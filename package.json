@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource/playfair-display": "^5.2.8",
     "@tailwindcss/vite": "^4.3.0",
+    "axios": "^1.18.1",
     "framer-motion": "^12.40.0",
     "i18next": "^26.3.1",
     "i18next-browser-languagedetector": "^8.2.1",
