@@ -1,5 +1,6 @@
 import axios from "axios";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function WaitlistSection() {

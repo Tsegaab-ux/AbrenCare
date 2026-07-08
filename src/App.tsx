@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Family from "./pages/FamilyPage";
 import ExecutiveHealth from "./pages/ExecutiveHealth";
 import ConsultationEthiopia from "./pages/ConsultationEthiopia";
-import Login from "../src/components/login";
-import Signup from "../src/components/Signup";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
   return (

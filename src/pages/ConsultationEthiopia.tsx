@@ -7,11 +7,8 @@ import BeforeAfterSection from "../components/BeforeAfterSection";
 import DoctorsSection from "../components/DoctorsSection";
 import TestimonialsSection from "../components/TestimonialSection";
 import GuaranteeSection from "../components/GuaranteeSection";
-import ConsultationBookingForm from "../components/ConsultationBookingForm";
-import waitlistSection from "../components/WaitlistSection";
 import Footer from "../components/Footer";
 import WaitlistSection from "../components/WaitlistSection";
-
 export default function ConsultationEthiopia() {
   return (
     <div className="bg-[#0A0A0A] text-white overflow-x-hidden">

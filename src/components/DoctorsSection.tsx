@@ -53,7 +53,7 @@ export default function Doctors() {
         </div>
         
         <div className="grid lg:grid-cols-3 gap-4.5">
-          {doctors.map((doctor, index) => (
+          {doctors.map((doctor) => (
             <div
               key={doctor.name}
               className="bg-white/4 border border-white/7 rounded-2xl p-6 lg:p-7 transition-all duration-300 hover:bg-white/7 hover:-translate-y-0.5"

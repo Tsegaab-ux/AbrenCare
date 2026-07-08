@@ -1,7 +1,6 @@
 export default function ConsultationBookingForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const form = e.currentTarget as HTMLFormElement;    
   };
 
   return (
